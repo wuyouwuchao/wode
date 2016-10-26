@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_below="@+id/radioGroup1">
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="票房榜单"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#aaaaaa"
+            android:button="@null"
+            android:checked="true"
+           
+             />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:text="鲜知道"
+            android:textSize="16sp"
+            android:textColor="#aaaaaa"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+             />
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:text="热片上映"
+            android:textSize="16sp"
+            android:textColor="#aaaaaa"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+             />
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:text="更多信息"
+            android:textSize="16sp"
+            android:textColor="#aaaaaa"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+             />
+
+    </RadioGroup>
+
+</RelativeLayout>

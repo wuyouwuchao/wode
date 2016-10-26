@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout 
+        android:id="@+id/more_rl"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/radioGroup1"
+        ></RelativeLayout>
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioa"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="我的收藏"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#aaaaaa"
+            android:button="@null"
+            android:checked="true"
+           
+             />
+
+        <RadioButton
+            android:id="@+id/radiob"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:text="电影周边"
+            android:textSize="16sp"
+            android:textColor="#aaaaaa"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+             />
+    </RadioGroup>
+</RelativeLayout>
